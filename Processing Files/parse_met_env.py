@@ -1,3 +1,4 @@
+###FILE FOR PARSING THE METEOROLOGICAL AND ENVIRONMENTAL DATA FILES FROM THIS REPOSITORY###
 import datetime
 import concurrent.futures
 
@@ -15,7 +16,7 @@ for name in names:
 print("begin")
 cdate = datetime.datetime(2012,1,1)            ###SET TO EARLIEST DATE WITHIN DATA###
 while cdate <= datetime.datetime(2022,12,31):  ###SET TO LATEST DATE WITHIN DATA###
-    file = open("firedata/{}-temp.csv".format(cdate.strftime("%Y-%m-%d")), "w")
+    file = open("firedata/{}-temp.csv".format(cdate.strftime("%Y-%m-%d")), "w") ###CHANGE TO ROOT DIRECTORY OF DESIRED MET./ENV. FACTOR. KEEP {} FOR THE DATE###
     file.close()
     cdate += datetime.timedelta(days=1)
 

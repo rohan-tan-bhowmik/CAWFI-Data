@@ -1,3 +1,4 @@
+###HELPER CODE FOR SPLITTING THE DATA FILE FROM JAN-JUN and JUL-DEC TO UPLOAD ON GITHUB <100 MB###
 import glob
 
 dirs = glob.iglob("*/*.csv")
