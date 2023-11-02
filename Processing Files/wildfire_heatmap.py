@@ -15,7 +15,7 @@ while cdate <= datetime.datetime(2018,12,31): ###SET TO LATEST DATE WITHIN DATA#
     ###FOR EACH DAY...###
     try:
         ###READ ALL WILDFIRE ACTIVITY IN THE FORM OF ABNORMAL FRP READINGS###
-        file = open("wildfire-items/firedata/{}-locations.csv".format(cdate.strftime("%Y-%m-%d")), "r")
+        file = open("daily_wildfire/{}-locations.csv".format(cdate.strftime("%Y-%m-%d")), "r")
         for line in file.readlines():
             allsizes.append(float(line.split(",")[2]))
     except FileNotFoundError:
@@ -27,7 +27,7 @@ globalmin = np.asarray(allsizes).min() ###THE OVERALL SMALLEST FRP READING (NOT 
 ###date IS THE DATE OF THE DATA FILE TO PROCESS###
 def getimg(date):
     try:
-        file = open("firedata/{}-locations.csv".format(date.strftime("%Y-%m-%d")), "r") ###CHANGE TO ROOT DIRECTORY OF WILDFIRE DATA. KEEP {} FOR THE DATE###
+        file = open("daily_wildfire/{}-locations.csv".format(date.strftime("%Y-%m-%d")), "r") ###CHANGE TO ROOT DIRECTORY OF WILDFIRE DATA. KEEP {} FOR THE DATE###
 
         lonbounds = [-124.48201686, -114.13122248] ###THE LONGITUDE RANGE OF THE BOX CONTAINING CALIFORNIA###
         latbounds = [32.52883674, 42.00950827]     ###THE LATITUDE RANGE OF THE BOX CONTAINING CALIFORNIA###
