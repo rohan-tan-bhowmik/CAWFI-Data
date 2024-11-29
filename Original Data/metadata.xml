@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<metadata>
+  <dataset_id>1</dataset_id>
+  <title>California Wildfire Inventory (CAWFI): An Extensive Dataset for Predictive Techniques based on Artificial Intelligence</title>
+  <abstract>CAWFI is a wildfire database of over 34 million data points for building and training wildfire prediction solutions, thereby potentially preventing megafires and flash fires by addressing them before they spark.</abstract>
+  <keywords>wildfire prediction, machine learning, environment</keywords>
+  <purpose>To provide environmental, meteorological, geological, and ecological data for wildfire prediction.</purpose>
+  <creator>Rohan Tan Bhowmik</creator>
+  <publisher>GitHub</publisher>
+  <publication_date>2024-11-28</publication_date>
+  <start_date>2012-01-01</start_date>
+  <end_date>2022-12-31</end_date>
+  <spatial_extent>California</spatial_extent>
+  <coordinate_system>EPSG:4326</coordinate_system>
+  <accuracy_description>N/A</accuracy_description>
+  <completeness_description>Complete wildfire data is provided from 2012 to 2018. Complete CO, NO2, PM10, PM25, TEMP, and WIND data is provided from 2012 to 2022.</completeness_description>
+  <data_format>SQL and CSV</data_format>
+  <access_rights>Open Access</access_rights>
+  <license>CC BY 4.0</license>
+  <contact>
+    <name>Rohan Tan Bhowmik</name>
+    <organization>Stanford University</organization>
+    <email>rbhowmik@stanford.edu</email>
+    <phone>+14082282989</phone>
+  </contact>
+</metadata>
